@@ -1,0 +1,246 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* padding: 64px 507px 146px 493px; */
+    padding-left: clamp(13.625em, 25vw, 31.25em);
+    padding-right: clamp(13.625em, 25vw, 31.25em);
+    
+    padding-top: clamp(6.6875em, 8vw, 12.5em);
+    padding-bottom: clamp(5.3125em, 6vw, 6.25em);
+   
+}
+.MainConatiner{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    flex-direction: column;
+}
+.TopContainer{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    flex-direction: column;
+    /* gap: 72px; */
+    gap: clamp(60px, calc(60px + 12 * ((100vw - 390px) / 1050)), 72px);
+
+}
+.TopContainerTop{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    flex-direction: column;
+    /* gap: 32px; */
+    gap: clamp(12px, calc(12px + 20 * ((100vw - 390px) / 1050)), 32px);
+
+}
+.TopContainerTop h3{
+    color: #FFFFFF;
+    font-size: var(--fs-48);
+    font-weight: 700;
+    font-family: "Anek Latin", sans-serif;
+}
+.TopContainerTop p{
+    color: #FFFFFF;
+    font-size: var(--fs-16);
+    line-height: 25px;
+    font-weight: 500;
+    font-family: "Manrope", sans-serif;
+}
+.TopContainerBottom h3{
+    color: #FFFFFF;
+    font-size: var(--fs-48);
+    font-weight: 700;
+    font-family: "Anek Latin", sans-serif;
+}
+.TopContainer p{
+    color: #FFFFFF;
+    font-size: var(--fs-16);
+    font-weight: 500;
+    line-height: 25px;
+    font-family: "Manrope", sans-serif;
+}
+.TopContainerBottom{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    flex-direction: column;
+    /* gap: 32px; */
+    gap: clamp(12px, calc(12px + 20 * ((100vw - 390px) / 1050)), 32px);
+
+}
+.FounderConatiner{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+.MiddleConatiner{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    flex-direction: column;
+    /* padding-top: 72px; */
+    padding-top: clamp(60px, calc(60px + 12 * ((100vw - 390px) / 1050)), 72px);
+
+}
+.MainConatinerHeading{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+   /* padding-bottom: 32px; */
+   padding-bottom: clamp(16px, calc(16px + 16 * ((100vw - 390px) / 1050)), 32px);
+
+}
+.MainConatinerHeading h3{
+    color: #FFFFFF;
+    font-size: var(--fs-48);
+    font-weight: 700;
+    font-family: "Anek Latin", sans-serif;
+}
+.TanayText h3{
+    color: #FFFFFF;
+    font-size: var( --fs-24);
+    font-weight: 700;
+    font-family: "Anek Latin", sans-serif;
+}
+.TanayDescription p{
+    color: #FFFFFF;
+    font-size: var(--fs-16);
+    line-height: 25px;
+    font-weight: 500;
+    font-family: "Manrope", sans-serif;
+}
+.TanayConatiner{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    flex-direction: row;
+    /* gap: 32px; */
+    gap: clamp(16px, calc(16px + 16 * ((100vw - 390px) / 1050)), 32px);
+
+    
+}
+.TanayConatinerText{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    flex-direction: column;
+    gap: 8px;
+}
+.KuntalConatiner{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    flex-direction: row;
+    /* gap: 32px; */
+    gap: clamp(16px, calc(16px + 16 * ((100vw - 390px) / 1050)), 32px);
+
+}
+.KuntalConatinerText{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    flex-direction: column;
+    gap: 8px;
+}
+.BottomConatiner{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: var(--fs-48);
+}
+.KuntalText h3{
+    color: #FFFFFF;
+    font-size: var( --fs-24);
+    font-weight: 700;
+    font-family: "Anek Latin", sans-serif;
+}
+.KuntalDescription p{
+    color: #FFFFFF;
+    font-size: var(--fs-16);
+    font-weight: 500;
+    line-height: 25px;
+    font-family: "Manrope", sans-serif;
+}
+.BottomConatiner p{
+    color: #FFFFFF;
+    font-size: var(--fs-16);
+    font-weight: 500;
+    font-family: "Manrope", sans-serif;
+}
+.BottomConatiner h3{
+    color: #FFFFFF;
+    font-size: var( --fs-24);
+    font-weight: 700;
+    font-family: "Anek Latin", sans-serif;
+
+}
+@media (min-width: 320px) and (max-width: 640px) {
+    .main{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .TanayConatiner{
+        flex-direction: column;
+    }
+    .TopContainerTop p{
+        width: 100%;
+    }
+    .KuntalConatiner{
+        flex-direction: column;
+
+    }
+    .TanayDescription p{
+        line-height: 20px;
+    }
+    .KuntalDescription p{
+        line-height: 20px;
+    }
+    .BottomConatiner h3{
+        font-size: 20px;
+    }
+    .BottomConatiner{
+        gap: 16px;
+    }
+}
+@media (min-width: 641px) and (max-width: 900px) {
+    .main{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .TanayConatiner{
+        flex-direction: column;
+    }
+    .KuntalConatiner{
+        flex-direction: column;
+
+    }
+    .BottomConatiner h3{
+        font-size: 22px;
+    }
+}
+@media (min-width: 901px) and (max-width: 1200px) {
+    .main{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .BottomConatiner h3{
+        font-size: 25px;
+    }
+}
+@media (min-width: 1201px) and (max-width: 1600px) {
+    .main{
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+    .BottomConatiner h3{
+        font-size: 27px;
+    }
+}

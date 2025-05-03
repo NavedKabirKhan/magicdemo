@@ -1,0 +1,664 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100dvh;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/Assets/Landing/Landing page background.png');
+  background-size: cover;
+  background-position: center;
+  padding-left: 218px;
+  padding-right: 218px;
+  padding-top: 59px;
+  padding-bottom: 85px;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 92px; */
+}
+
+.LogoContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.DinnerMainSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+  /* gap: 230px; */
+  padding-top: 50px;
+}
+
+.DinnerSectionLeft {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.DinnerSectionLeftText p {
+  font-size: var(--fs-24);
+  font-weight: 500;
+  color: #ff6e3b;
+  font-family: 'Anek Latin', sans-serif;
+  margin: 0;
+}
+
+.DinnerSectionLeftTextGif {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  width: 70%;
+}
+
+.DinnerSectionLeftTextGif h3 {
+  font-size: var(--fs-96);
+  font-weight: 700;
+  color: #ffffff;
+  font-family: 'Anek Latin', sans-serif;
+  text-align: left;
+  line-height: 0.9;
+  background: linear-gradient(to bottom, #ffffff, #fcc0aa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.DinnerSectionLeftTextGif img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.decorations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.underline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-right: 150px;
+  padding-bottom: 28.47px;
+  position: relative;
+}
+.underline img {
+  position: absolute;
+  z-index: 1;
+}
+
+.DinnerSectionLeftBtn {
+  background-color: #ff6e3b;
+  padding: 20px 53px 20px 53px;
+  border-radius: 20px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: var(--fs-24);
+  font-family: 'Anek Latin', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+  outline: none;
+  border: none;
+}
+
+.DinnerSectionLeftBtn img {
+  position: absolute;
+  right: 0;
+}
+
+.DinnerSectionLeftBtn:hover {
+  background-color: #434343;
+}
+
+.DinnerMainSectionRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.DinnerMainSectionRight img {
+  width: 100%;
+  height: 100%;
+  max-width: 684px;
+  max-height: 669px;
+}
+.bottomControls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 35px;
+}
+
+.scrollText {
+  display: flex;
+  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+.scrollText p {
+  color: #ff6e3b;
+  font-size: var(--fs-16);
+  font-weight: 500;
+  font-family: 'Anek Latin', sans-serif;
+}
+.explore {
+  font-size: var(--fs-24);
+  font-weight: 500;
+  font-family: 'Anek Latin', sans-serif;
+  color: white;
+}
+
+.arrowIcon {
+  width: 18px;
+  height: auto;
+  margin-top: 4px;
+}
+
+.bangaloreTag {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  text-align: right;
+  position: relative;
+}
+
+.bangaloreTag p {
+  font-size: var(--fs-16);
+  font-weight: 500;
+  color: #ffffff;
+  font-family: 'Anek Latin', sans-serif;
+  text-align: right;
+}
+.BangloreTextSpan {
+  font-size: var(--fs-24);
+  font-weight: 500;
+  color: #ff6e3b;
+  font-family: 'Anek Latin', sans-serif;
+}
+
+.dot {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  left: 42px;
+  top: 13px;
+  background-color: #51ff2e;
+  border-radius: 50%;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+
+.mainBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute; */
+  left: 50%;
+}
+
+.mainBtn button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding-right: 11px;
+  outline: none;
+  border: 1px solid #ffffff17;
+  background: linear-gradient(to bottom, #2b2725, #3c241b);
+  overflow: hidden;
+  gap: 24px;
+  cursor: pointer;
+  backdrop-filter: blur(70px);
+}
+
+.searchButtonText {
+  padding-left: 32px;
+  padding-bottom: 27px;
+  padding-top: 27px;
+  font-family: 'Anek Latin', sans-serif;
+  font-weight: 0;
+  color: #ffffff;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+}
+
+.searchButtonIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  background-color: #ff6e3bcc;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+}
+
+.iconSlideWrapper {
+  position: relative;
+  width: 22px;
+  height: 26px;
+}
+.iconSlideWrapper img {
+  width: 100%;
+  height: 100%;
+  max-width: 22px;
+  max-height: 26px;
+}
+.icon {
+  position: absolute;
+  left: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.iconTop {
+  top: 0;
+  opacity: 1;
+}
+
+.iconBottom {
+  top: -40px;
+  opacity: 0;
+}
+
+.mainBtn button:hover .iconTop {
+  top: 40px;
+  opacity: 0;
+}
+
+.mainBtn button:hover .iconBottom {
+  top: 0;
+  opacity: 1;
+}
+
+@media (min-width: 320px) and (max-width: 640px) {
+  .main {
+    padding: 20px 40px 80px 40px;
+    /* height: 100vh; */
+  }
+  .LogoContainer {
+    justify-content: center;
+    align-items: center;
+    width: 139.18px;
+    height: 50.93px;
+  }
+  .LogoContainer img {
+    width: 139px;
+    height: 50px;
+  }
+
+  .DinnerMainSection {
+    flex-direction: column-reverse;
+    gap: 0px;
+    padding: 80px 0px 0px 0px;
+  }
+
+  .DinnerSectionLeft {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .DinnerSectionLeftTextGif h3 {
+    text-align: center;
+    width: 100%;
+    line-height: normal;
+  }
+
+  .DinnerSectionLeftTextGif {
+    width: 100% !important;
+  }
+
+  .underline {
+    /* padding: 0px; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .underline img {
+    width: 100%;
+    height: 100%;
+    max-width: 177.02px;
+    max-height: 12px;
+    position: absolute;
+    top: -12px;
+    right: 80px;
+    /* left: 0; */
+    /* bottom: 0; */
+  }
+
+  .searchButtonText {
+    padding-top: 16px;
+    padding-left: 23px;
+    padding-bottom: 15px;
+    white-space: nowrap;
+  }
+
+  .iconSlideWrapper img {
+    width: 13px;
+    height: 16px;
+  }
+
+  .DinnerSectionLeftBtn {
+    display: none;
+  }
+
+  /* .gost {
+      left: 300px;
+      top: 60px;
+    } */
+
+  .DinnerSectionLeftTextGif img {
+    width: 100%;
+    height: 100%;
+    max-width: 40px;
+    max-height: 40px;
+    bottom: 10px;
+    right: 0px;
+  }
+
+  .DinnerMainSectionRight img {
+    max-width: 100%;
+    height: auto;
+  }
+  .mainBtn button {
+    gap: 18px;
+    padding-right: 8px;
+  }
+
+  .searchButtonText {
+    padding-left: 28px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  .searchButtonIcon {
+    padding: 10px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .iconSlideWrapper {
+    width: 20px;
+    height: 24px;
+  }
+
+  .iconSlideWrapper img {
+    max-width: 20px;
+    max-height: 24px;
+  }
+
+  .scrollText,
+  .bangaloreTag {
+    width: 50%;
+    font-size: 14px;
+  }
+
+  .scrollText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .bangaloreTag {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+  .BangloreTextSpan {
+    font-size: 14px;
+  }
+  .bottomControls {
+    display: flex;
+    flex-direction: column;
+    gap: 69px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .bottomControls > div:nth-child(2) {
+    order: 1;
+  }
+
+  .bottomControls > div:nth-child(1),
+  .bottomControls > div:nth-child(3) {
+    order: 2;
+    width: 100%;
+  }
+
+  .bottomControls > div:nth-child(3) {
+    margin-top: -120px;
+  }
+
+  .bottomControls > div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .dot {
+    left: 235px;
+    top: 17px;
+  }
+}
+@media (min-width: 641px) and (max-width: 1200px) {
+  .main {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    background-position: center;
+  }
+
+  .mainContainer {
+    gap: 60px;
+  }
+
+  .LogoContainer img {
+    max-width: 150px;
+    max-height: 55px;
+  }
+
+  .DinnerMainSection {
+    gap: 100px;
+    padding-top: 70px;
+    flex-direction: row;
+  }
+  .DinnerSectionLeftText {
+    width: 100%;
+  }
+  .DinnerSectionLeftTextGif {
+    width: 100% !important;
+  }
+  .DinnerSectionLeftTextGif h3 {
+    width: 100%;
+    /* line-height: 90%; */
+  }
+
+  .gost {
+    max-width: 50px;
+    max-height: 50px;
+    left: 270px;
+    top: 120px;
+  }
+
+  .splikStar {
+    max-width: 35px;
+    max-height: 35px;
+    left: 150px;
+    top: 40px;
+  }
+
+  .underline {
+    padding-right: 100px;
+    padding-bottom: 20px;
+  }
+
+  .DinnerSectionLeftBtn {
+    padding: 16px 40px;
+  }
+
+  .DinnerMainSectionRight img {
+    max-width: 520px;
+    max-height: 520px;
+  }
+
+  .bottomControls {
+    padding-top: 25px;
+  }
+
+  .scrollText img {
+    width: 100%;
+    height: 100%;
+    max-width: 18px;
+    max-height: 19px;
+    margin-top: 10px;
+  }
+
+  .bangaloreTag img {
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+  .bangaloreTag p {
+    font-size: var(--fs-14);
+  }
+
+  .BangloreTextSpan {
+    font-size: var(--fs-20);
+  }
+
+  .dot {
+    width: 5px;
+    height: 5px;
+    left: 15px;
+    top: 6px;
+  }
+
+  .mainBtn button {
+    gap: 18px;
+    padding-right: 10px;
+  }
+
+  .searchButtonText {
+    padding-left: 28px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  .searchButtonIcon {
+    padding: 10px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .iconSlideWrapper {
+    width: 20px;
+    height: 24px;
+  }
+
+  .iconSlideWrapper img {
+    max-width: 20px;
+    max-height: 24px;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1440px) {
+  .gost {
+    left: 360px;
+    top: 140px;
+  }
+  .dot {
+    width: 5px;
+    height: 5px;
+    left: 32px;
+    top: 6px;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .main{
+    padding-top: clamp(200px, 0.06vw + 200px, 500px);
+  }
+  .DinnerSectionLeftText p {
+    font-size: clamp(3.13rem, 1.2vi + 1.2vb + 0.5rem, 5.63rem);
+  }
+  
+  .DinnerSectionLeftTextGif h3 {
+    font-size: clamp(12.5rem, 3vi + 2vb + 6rem, 18.75rem);
+  }
+  
+  .scrollText p {
+    font-size: clamp(1.88rem, 0.4vi + 1.25rem, 2.5rem);;
+  }
+  .explore {
+    font-size: clamp(2.5rem, 0.4vi + 1.88rem, 3.13rem);
+  }
+ 
+  
+.bangaloreTag p {
+  font-size: clamp(1.88rem, 0.4vi + 1.25rem, 2.5rem);;
+  font-weight: 500;
+  color: #ffffff;
+  font-family: 'Anek Latin', sans-serif;
+  text-align: right;
+}
+.BangloreTextSpan {
+  font-size: clamp(2.5rem, 0.4vi + 1.88rem, 3.13rem);
+    font-weight: 500;
+  color: #ff6e3b;
+  font-family: 'Anek Latin', sans-serif;
+}
+
+.dot {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  left: 42px;
+  top: 13px;
+  background-color: #51ff2e;
+  border-radius: 50%;
+  animation: blink 1s infinite;
+}
+  
+  /* .DinnerSectionLeftTextGif img {
+    position: absolute;
+    bottom: 0;
+    right: -260px;
+} */
+}

@@ -1,0 +1,83 @@
+.main {
+  display: none;
+}
+.Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.heading {
+  width: 65%;
+}
+.heading h2 {
+  font-family: Anek Latin;
+  font-weight: 700;
+  font-size: var(--fs-36);
+  text-align: center;
+}
+
+.card {
+    padding: 26px 28px;
+  border-radius: 16px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 10px; */
+  /* Add your layout styles */
+}
+.cardText{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.cardDescription span{
+  font-size: var(--fs-24);
+}
+.cardOne {
+  background-image: url('../oneBg.png');
+  color: white;
+}
+.cardOne video{
+    width: 196px;
+    height: 200px;
+}
+
+.cardTwo {
+color: black;
+  background-image: url('../twoBg.png');
+}
+.cardTwo video{
+    width: 190px;
+    height: 200px;
+}
+.cardThree {
+  background-image: url('../threeBg.png');
+}
+.cardThree video{
+    width: 200px;
+    height: 200px;
+}
+
+.cardFour {
+color: #ffffff;
+
+  background-image: url('../fourBg.png');
+}
+.cardFour video{
+    width: 208px;
+    height: 211px;
+}
+
+
+
+@media screen and (max-width: 960px) {
+  .main {
+    display: block;
+  }
+}

@@ -1,0 +1,661 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/backgroundImages/chooseyourplan.png");
+  background-size: cover;
+  /* background-color: #000000; */
+  padding: 100px 218px 100px 218px;
+  margin-top: 100px;
+  position: relative;
+}
+.MainConatiner {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 299px;
+}
+.LeftContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 85px;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.heading h3 {
+  font-size: var(--fs-64);
+  font-weight: 700;
+  font-family: "Anek Latin", sans-serif;
+  color: #ffffff;
+  white-space: nowrap;
+}
+.LeftContainerImages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+.LeftContainerImages img {
+  width: 100%;
+  height: 100%;
+  max-width: 426px;
+  max-height: 453px;
+}
+.DinnerOne {
+  position: absolute;
+  top: 50px;
+  transform: rotate(-7.06deg);
+}
+.DinnerTwo {
+  position: absolute;
+  top: 50px;
+}
+.DinnerThree {
+  position: absolute;
+  top: 50px;
+  transform: rotate(6.65deg);
+}
+.DinnerFour {
+  position: absolute;
+  top: 50px;
+  transform: rotate(-3.16deg);
+}
+
+.RightConatiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.CardsConatiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 56px;
+}
+.CardOne, .CardTwo, .CardThree{
+  background-image: url("../../Assets/OurDinner/backBg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.CardOne {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 100%;
+  padding: 48.15px 47.17px 47.17px 42.16px;
+  transform: rotate(0.2deg);
+  /* background: linear-gradient(180deg, rgba(48, 48, 48, 0.5) 0%, rgba(13, 5, 3, 0.5) 52.2%, rgba(45, 11, 0, 0.5) 100%); */
+
+  /* backdrop-filter: blur(120px); */
+  border-radius: 20px;
+  position: relative;
+}
+.CardOne:hover {
+  /* background: #262626; */
+}
+.CardOneTexts {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 90%;
+  gap: 15.7px;
+}
+.CardOneTexts h4 {
+  font-size: var(--fs-32);
+  font-weight: 700;
+  color: #ffffff;
+  font-family: "Anek Latin", sans-serif;
+}
+.CardOneTexts p {
+  font-family: "Anek Latin", sans-serif;
+  font-size: var(--fs-24);;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 34px;
+}
+.CardTwo {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 100%;
+  padding: 48.15px 47.17px 47.17px 42.16px;
+  transform: rotate(1.66deg);
+  /* background: linear-gradient(180deg, rgba(48, 48, 48, 0.5) 0%, rgba(13, 5, 3, 0.5) 52.2%, rgba(45, 11, 0, 0.5) 100%); */
+
+  /* backdrop-filter: blur(120px); */
+  border-radius: 20px;
+  position: relative;
+}
+/* .CardTwo:hover {
+  background: #262626;
+} */
+.CardTwoTexts {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 87%;
+  gap: 15.7px;
+}
+.CardTwoTexts h4 {
+  font-size: var(--fs-32);
+  font-weight: 700;
+  color: #ffffff;
+  font-family: "Anek Latin", sans-serif;
+}
+.CardTwoTexts p {
+  font-family: "Anek Latin", sans-serif;
+  font-size: var(--fs-24);
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 34px;
+
+}
+.CardThree {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 100%;
+  padding: 48.15px 47.17px 47.17px 42.16px;
+  transform: rotate(-0.88deg);
+  /* background: linear-gradient(180deg, rgba(48, 48, 48, 0.5) 0%, rgba(13, 5, 3, 0.5) 52.2%, rgba(45, 11, 0, 0.5) 100%); */
+
+  /* backdrop-filter: blur(120px); */
+  border-radius: 20px;
+position: relative;
+}
+.CardThree:hover {
+  /* background: #262626; */
+}
+.CardThreeTexts {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 89%;
+  gap: 15.7px;
+}
+.CardThreeTexts h4 {
+  font-size: var(--fs-32);
+  font-weight: 700;
+  color: #ffffff;
+  font-family: "Anek Latin", sans-serif;
+}
+.CardThreeTexts p {
+  font-family: "Anek Latin", sans-serif;
+  font-size: var(--fs-24);
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 34px;
+}
+.PersonOneCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #262626;
+  border-radius: 20px;
+  /* width: 100%; */
+  flex-direction: row;
+  transform: rotate(4.45deg);
+  padding: 27.19px 162.38px 36.42px 43.73px;
+  padding-top: 27.19px;
+  padding-bottom: 36.42px;
+  padding-left: 43.73px;
+  position: absolute;
+  right: -80px;
+  top: -30px;
+}
+.PersonOneCardContent {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+}
+
+.PersonOneCardContent h4 {
+  font-size: var(--fs-32);
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Anek Latin", sans-serif;
+}
+.PeopleOneImage {
+  position: absolute;
+  top: -70px;
+  right: -165px;
+}
+.PersonCardTwo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 20px;
+  flex-direction: row;
+  transform: rotate(-1.64deg);
+  padding: 28.44px 153.63px 25.19px 42.66px;
+  position: absolute;
+  right: -80px;
+  top: -40px;
+}
+.PersonTwoCardContent {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+}
+.PersonTwoCardContent h4 {
+  font-size: var(--fs-32);
+  color: #262626;
+  font-weight: 500;
+  font-family: "Anek Latin", sans-serif;
+}
+.PeopleTwoImage {
+  position: absolute;
+  top: -55px;
+  right: -150px;
+}
+.PersonCardThree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fe6e3b;
+  border-radius: 20px;
+  flex-direction: row;
+  transform: rotate(4.13deg);
+  padding: 26.95px 143.35px 34.41px 43.62px;
+  position: absolute;
+  right: -80px;
+  top: -60px;
+}
+.PersonThreeCardContent {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+}
+.PersonThreeCardContent h4 {
+  font-size: var(--fs-32);
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Anek Latin", sans-serif;
+}
+.PeopleThreeImage {
+  position: absolute;
+  top: -73px;
+  right: -140px;
+}
+.CardsConatinerMobile{
+  display: none;
+}
+.mainMobile{
+  display: none;
+}
+@media (min-width: 320px) and (max-width: 640px) {
+  .main {
+    display: none;
+    flex-direction: column;
+    padding: 50px 40px 100px 40px;
+  }
+  .mainMobile{
+    display: flex;
+    flex-direction: column;
+    padding: 150px 40px 100px 40px;
+
+  }
+
+
+
+  .MainConatiner {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .LeftContainer {
+    gap: 40px;
+  }
+
+  .heading h3 {
+    font-size: 32px;
+    text-align: center;
+    white-space: normal;
+  }
+.LeftContainerImages{
+  position: relative;
+  height: 400px;
+}
+  .LeftContainerImages img {
+    max-width: 100%;
+    height: auto;
+    max-width: 240px !important;
+    max-height: 248px !important;
+  }
+
+  .DinnerOne,
+  .DinnerTwo,
+  .DinnerThree,
+  .DinnerFour {
+    position: absolute;
+    top: 0;
+    /* transform: none; */
+  }
+
+  .RightConatiner {
+    width: 100%;
+  }
+
+  .CardsConatiner {
+    gap: 30px;
+  }
+
+  .CardOne,
+  .CardTwo,
+  .CardThree {
+    flex-direction: column;
+    padding: 30px 20px;
+    transform: none;
+    width: 100%;
+    height: 100%;
+    max-width: 321px;
+    max-height: 187px;
+    background-image: url("../../Assets/OurDinner/cardMobile.png");
+  }
+
+  .CardOneTexts,
+  .CardTwoTexts,
+  .CardThreeTexts {
+    width: 100%;
+    text-align: left;
+  }
+
+  .CardOneTexts p{
+    line-height: 20px;
+  }
+  .CardTwoTexts p{
+    line-height: 20px;
+  }
+  .CardThreeTexts p{
+    line-height: 20px;
+  }
+
+
+  .PersonOneCard,
+  .PersonCardTwo,
+  .PersonCardThree {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    padding: 0;
+    transform: none;
+    background: none;
+  }
+
+  .PeopleOneImage,
+  .PeopleTwoImage,
+  .PeopleThreeImage {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 80px;
+  }
+  /* .mainMobile .PersonOneCard img{
+    position: absolute;
+  }
+  .mainMobile .PersonCardTwo img{
+    position: absolute;
+  }
+  .mainMobile .PersonCardThree img{
+    position: absolute;
+  } */
+
+}
+
+@media (min-width: 640px) and (max-width: 960px) {
+  .main {
+    display: none;
+    flex-direction: column;
+    padding: 50px 40px 100px 40px;
+  }
+  .mainMobile{
+    display: flex;
+    flex-direction: column;
+    padding: 150px 40px 100px 40px;
+
+  }
+
+
+
+  .MainConatiner {
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  .LeftContainer {
+    gap: 40px;
+  }
+
+  .heading h3 {
+    font-size: 32px;
+    text-align: center;
+    white-space: normal;
+  }
+.LeftContainerImages{
+  position: relative;
+  height: 400px;
+}
+  .LeftContainerImages img {
+    width: 100%;
+    height: auto;
+    max-width: 350px!important;
+    max-height: 340px!important; ;
+  }
+
+  .DinnerOne,
+  .DinnerTwo,
+  .DinnerThree,
+  .DinnerFour {
+    position: absolute;
+    top: 0;
+    /* transform: none; */
+  }
+
+  .RightConatiner {
+    width: 100%;
+  }
+
+  .CardsConatiner {
+    gap: 30px;
+  }
+
+  .CardOne,
+  .CardTwo,
+  .CardThree {
+    flex-direction: column;
+    padding: 30px 40px;
+    transform: none;
+    width: 100%;
+    height: 100%;
+    max-width: 450px;
+    max-height: 187px;
+    background-image: url("../../Assets/OurDinner/cardMobile.png");
+  }
+
+  .CardOneTexts,
+  .CardTwoTexts,
+  .CardThreeTexts {
+    width: 100%;
+    text-align: left;
+  }
+
+  .CardOneTexts p{
+    line-height: 20px;
+  }
+  .CardTwoTexts p{
+    line-height: 20px;
+  }
+  .CardThreeTexts p{
+    line-height: 20px;
+  }
+
+
+  .PersonOneCard,
+  .PersonCardTwo,
+  .PersonCardThree {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    padding: 0;
+    transform: none;
+    background: none;
+  }
+
+  .PeopleOneImage,
+  .PeopleTwoImage,
+  .PeopleThreeImage {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 80px;
+  }
+  /* .mainMobile .PersonOneCard img{
+    position: absolute;
+  }
+  .mainMobile .PersonCardTwo img{
+    position: absolute;
+  }
+  .mainMobile .PersonCardThree img{
+    position: absolute;
+  } */
+
+}
+
+@media (min-width: 960px) and (max-width: 1200px) {
+  .main{
+    padding: 100px 100px;
+  }
+  .MainConatiner {
+    gap: 60px;
+  }
+
+  .CardOne,
+  .CardTwo,
+  .CardThree {
+    padding: 40px 35px;
+  }
+
+  .PersonOneCard,
+  .PersonCardTwo,
+  .PersonCardThree {
+    right: -50px;
+    top: -25px;
+    padding: 10px 80px 10px 20px;
+  }
+
+  .PeopleOneImage,
+  .PeopleThreeImage {
+    right: -80px;
+    top: -70px;
+    width: 80px;
+  }
+  .PeopleTwoImage{
+    right: -80px;
+    top: -55px;
+    width: 80px;
+  }
+  .LeftContainerImages img {
+    width: 100%;
+    height: auto;
+    max-width: 350px!important;
+    max-height: 340px!important; ;
+  }
+  .CardOne,
+  .CardTwo,
+  .CardThree {
+    flex-direction: column;
+    padding: 30px 40px;
+    transform: none;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    max-height: 300px;
+    background-image: url("../../Assets/OurDinner/cardMobile.png");
+  }
+  
+}
+@media (min-width: 1201px) and (max-width: 1600px) {
+  .main{
+    padding: 100px 100px;
+  }
+  .MainConatiner {
+    gap: 100px;
+  }
+   .LeftContainer{
+    width: 50%;
+   }
+  .CardOne,
+  .CardTwo,
+  .CardThree {
+    padding: 40px 35px;
+  }
+
+  .PersonOneCard,
+  .PersonCardTwo,
+  .PersonCardThree {
+    right: -50px;
+    top: -25px;
+    padding: 20px 120px 20px 40px;
+  }
+
+  .PeopleOneImage,
+  .PeopleThreeImage {
+    right: -100px;
+    top: -70px;
+    width: 100px;
+  }
+  .PeopleTwoImage{
+    right: -100px;
+    top: -55px;
+    width: 100px;
+  }
+  .LeftContainerImages img {
+    width: 100%;
+    height: auto;
+    max-width: 350px!important;
+    max-height: 340px!important; ;
+  }
+  .CardOne,
+  .CardTwo,
+  .CardThree {
+    flex-direction: column;
+    padding: 30px 40px;
+    transform: none;
+    width: 100%;
+    height: 100%;
+    max-width: 600px !important;
+    max-height: 300px !important;
+    background-image: url("../../Assets/OurDinner/cardMobile.png");
+  }
+  
+
+}

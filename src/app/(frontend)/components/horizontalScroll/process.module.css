@@ -1,0 +1,183 @@
+.meetTheFounderWrapper {
+  /* min-width: 50vw; */
+  /* background-image: url("../../../../public/background.png"); */
+  background-position: center;
+  background-size: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  font-family: var(--font-anek-latin);
+  background-color: black;
+  height: 100dvh;
+}
+
+.meetTheFounderContainer {
+  /* min-width: 90vw; */
+  width: fit-content;
+  display: flex;
+  flex-wrap: nowrap;
+  font-style: normal;
+  font-weight: 500;
+  height: 100%;
+}
+.panelFirst {
+  height: 100dvh;
+  width: max-content;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  background-image: url('../../Assets/HorizontalScroll/background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.meetTheFoundersHeading {
+  /* width: 768px; */
+  /* padding-left: 213px; */
+  /* padding: 300px 214px; */
+  padding-top: clamp(0px, 30vh, 300px);
+  padding-right: clamp(0px, 10vw, 214px);
+  padding-bottom: clamp(0px, 30vw, 300px);
+  padding-left: clamp(40px, 8vw, 214px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.meetTheFoundersHeading h2 {
+  font-weight: 400;
+  font-size: var(--fs-230);
+}
+
+.meetTheFoundersHeading p {
+  font-weight: 500;
+  font-size: var(--fs-24);
+  width: 440px;
+}
+.bitmojiImage {
+  position: relative;
+}
+.cameraImage {
+  position: relative;
+}
+
+.bitmojiImage img {
+  position: absolute;
+  left: -100px;
+  bottom: 50px;
+}
+
+.cameraImage img {
+  position: absolute;
+  rotate: -7.24deg;
+  top: 50px;
+  right: 50px;
+}
+
+.meetTheFoundersDescription {
+  font-weight: 500;
+  font-size: var(--fs-24);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 110px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 960px) {
+  .panelFirst {
+    display: flex;
+    flex-direction: column;
+    width: 320vw;
+    height: 100dvh;
+    justify-content: center;
+    background-image: url('../../Assets/HorizontalScroll/backgroundMobile.webp');
+  }
+  .meetTheFounderWrapper {
+    height: 100dvh;
+    /* height: auto; */
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .meetTheFounderContainer {
+    flex-direction: column;
+    position: unset;
+    width: 100vw;
+  }
+
+  .meetTheFoundersHeading {
+    width: 100%;
+    /* padding: 0 0 0 40px; */
+  }
+
+  .meetTheFoundersDescription {
+    width: 100%;
+    padding-left: 0;
+    /* margin-top: 60px; */
+    gap: 100px;
+  }
+  .bitmojiImage img {
+    width: 70px;
+    height: 70px;
+    left: -110px;
+    bottom: 0px;
+  }
+  .stickers img {
+    width: 180px;
+    height: 120px;
+  }
+  .cameraImage img {
+    width: 40px;
+    height: 40px;
+    top: 0;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1200px) {
+  .meetTheFounderWrapper {
+    padding: 115px 60px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 640px) {
+  .meetTheFounderWrapper {
+    padding: 50px 30px;
+  }
+
+  .meetTheFoundersHeading p,
+  .founderDescription {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .meetTheFoundersHeading h2 {
+    font-weight: 400;
+    font-size: clamp(25rem, 12vi + 6.25rem, 43.75rem);
+  }
+  .meetTheFoundersHeading p {
+  font-size: clamp(3.13rem, 1.6vi + 0.63rem, 5.63rem);
+  width: 100%;
+  }
+  .process_panelFirst__fhyZI {
+    height: 100dvh;
+    width: -moz-max-content;
+    width: max-content;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    background-image: url(/_next/static/media/background.5bf98ae7.png);
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+  }
+  .stickers img{
+    width: 500px;
+    height: auto;
+  }
+}

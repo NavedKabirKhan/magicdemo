@@ -1,0 +1,523 @@
+.main {
+  display: flex;
+  width: 100%;
+  padding-top: 250px;
+  padding-bottom: 100px;
+  /* height: 150vh; */
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.8s ease;
+  background-color: black;
+
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-left: 79px;
+  padding-right: 223px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 72px;
+  position: relative;
+}
+.magictableLogo {
+  position: absolute;
+  left: 0px;
+  top: -80px;
+  /* object-fit: cover; */
+  z-index: 1;
+}
+.magictableLogo img {
+  /* width: 100%;
+    height: 100%; */
+  width: 1920px;
+  height: 229px;
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+.leftContainer img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: -60px;
+  margin-left: 50px;
+  position: relative;
+  z-index: 2;
+  /* width: 50%; */
+}
+.rightContainerHeading {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 24px;
+  width: 96%;
+  padding-bottom: 92px;
+}
+.rightContainerHeading h3 {
+  font-size: var(--fs-64);
+  font-weight: 500;
+  font-family: 'Anek Latin', sans-serif;
+  color: #ffffff;
+}
+.rightContainerHeading p {
+  font-size: var(--fs-16);
+  font-weight: 400;
+  font-family: 'Manrope', sans-serif;
+  color: #ffffff;
+  line-height: 25px;
+}
+
+.qrContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background: #262626;
+  padding: 21px 23px 16px 24px;
+  border-radius: 24.38px;
+  gap: 191.77px;
+  width: 100%;
+}
+.qrContainer img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  max-width: 95px;
+  max-height: 95px;
+}
+
+.qrContainer p {
+  color: #fff;
+  font-size: var(--fs-16);
+  font-weight: 500;
+  font-family: 'Manrope', sans-serif;
+}
+
+.storeButtons {
+  display: flex;
+  gap: 16px;
+  padding-top: 24px;
+  width: 100%;
+}
+
+.googlePlayStore {
+  display: flex;
+  align-items: self-end;
+  justify-content: center;
+  flex-direction: column;
+  gap: 9px;
+  /* background: #ff6e3b; */
+  background: #262626;
+width: 50%;
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 17px 23px 15px 24px;
+  transition: 0.3s ease;
+}
+
+.googlePlayStore:hover {
+  background: #262626;
+}
+.arrowMain img {
+  display: flex;
+  /* justify-content: right; */
+  /* align-items: end; */
+}
+.applePlayStore {
+  display: flex;
+  align-items: self-end;
+  justify-content: center;
+  gap: 9px;
+  flex-direction: column;
+  /* background: #ff6e3b; */
+  background: #262626;
+width: 50%;
+  padding: 17px 23px 16px 24px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.applePlayStore:hover {
+  background: #262626;
+}
+.storeButtonTwo {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+.storeButtonTwo img {
+  width: 100%;
+  height: 100%;
+  max-width: 37px;
+  max-height: 44px;
+}
+
+.storeButtonOne {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+
+  width: 100%;
+}
+
+.storeButtonOne img {
+  width: 100%;
+  height: 100%;
+  max-width: 37px;
+  max-height: 41px;
+}
+.storeButtonOne p {
+  color: white;
+  font-family: 'Manrope', sans-serif;
+  font-size: var(--fs-16);
+  font-weight: 400;
+  width: 100%;
+}
+.storeButtonTwo p {
+  width: 100%;
+  color: white;
+  font-family: 'Manrope', sans-serif;
+  font-size: var(--fs-16);
+  font-weight: 400;
+}
+@media (min-width: 320px) and (max-width: 640px) {
+  .main {
+    flex-direction: column;
+    padding-top: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    height: auto;
+    background-color: black;
+
+  }
+
+  .mainContainer {
+    flex-direction: column;
+    gap: 26px;
+    padding: 0px;
+  }
+
+  .magictableLogo {
+    left: -30px;
+    top: -10px;
+  }
+  .magictableLogo img {
+    width: 402px !important;
+    height: 51px !important;
+    /* max-width: 402px;
+    max-height: 51px; */
+  }
+
+  .rightContainer {
+    margin: 0;
+    align-items: center;
+    text-align: left;
+    gap: 42px;
+  }
+  .rightContainerHeading {
+    width: 92%;
+    gap: 12px;
+    padding: 0px;
+  }
+  .rightContainerHeading h3 {
+    font-size: 36px;
+    font-weight: 700;
+  }
+  .leftContainer {
+    justify-content: center;
+    align-items: center;
+  }
+  .leftContainer img {
+    width: 488px !important;
+    height: 447px !important;
+    /* max-width: 488px;
+    max-height: 447px; */
+  }
+
+  .rightContainerHeading p {
+    line-height: 20px;
+  }
+
+  .qrContainer {
+    display: none;
+  }
+
+  .storeButtons {
+    gap: 11px;
+  }
+  .googlePlayStore {
+    padding: 16px 16px 12px 16px;
+    border-radius: 12px;
+    gap: 11px;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .applePlayStore {
+    padding: 16px 16px 12px 16px;
+    border-radius: 12px;
+    gap: 11px;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+  .storeButtonTwo {
+    gap: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .storeButtonOne {
+    gap: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .storeButtonTwo p {
+    margin: 0px;
+  }
+  .storeButtonOne p {
+    margin: 0px;
+  }
+  .storeButtonOne img {
+    width: 23px !important;
+    height: 26px !important;
+  }
+  .storeButtonTwo img {
+    width: 23px !important;
+    height: 26px !important;
+  }
+}
+@media (min-width: 641px) and (max-width: 1200px) {
+  .main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    height: auto;
+  }
+
+  .mainContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 0px;
+  }
+
+  .magictableLogo {
+    left: -30px;
+    top: -50px;
+  }
+
+  .magictableLogo img {
+    width: 100%;
+    object-fit: cover;
+    /* width: 750px; */
+    height: auto;
+  }
+
+  .leftContainer {
+    width: 100%;
+    position: relative;
+  }
+
+  .leftContainer img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+  }
+
+  .rightContainer {
+    margin: 0;
+    margin-left: 20px;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .rightContainerHeading {
+    width: 100%;
+    gap: 20px;
+    padding-bottom: 0px;
+  }
+
+  .rightContainerHeading h3 {
+    font-size: 48px;
+    font-weight: 600;
+  }
+
+  .rightContainerHeading p {
+    font-size: var(--fs-16);
+    line-height: 24px;
+  }
+
+  .qrContainer {
+    justify-content: flex-end;
+    gap: 150px;
+    padding: 20px 35px 16px 35px;
+  }
+
+  .qrContainer img {
+    max-width: 80px;
+    max-height: 80px;
+  }
+
+  .storeButtons {
+    gap: 14px;
+    padding-top: 20px;
+  }
+
+  .googlePlayStore,
+  .applePlayStore {
+    padding: 14px 20px 14px 20px;
+    border-radius: 18px;
+    gap: 10px;
+  }
+
+  .storeButtonOne,
+  .storeButtonTwo {
+    gap: 16px;
+  }
+
+  .storeButtonOne img,
+  .storeButtonTwo img {
+    width: 30px !important;
+    height: 34px !important;
+  }
+
+  .storeButtonOne p,
+  .storeButtonTwo p {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1440px) {
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 50px;
+    height: auto;
+  }
+
+  .mainContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    padding: 0px;
+  }
+
+  .magictableLogo {
+    left: -80px;
+    top: -60px;
+  }
+
+  .magictableLogo img {
+    width: 1500px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .leftContainer {
+    width: 100%;
+    position: relative;
+  }
+
+  .leftContainer img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+  }
+
+  .rightContainer {
+    margin: 0;
+    margin-left: 30px;
+    align-items: flex-start;
+    gap: 36px;
+  }
+
+  .rightContainerHeading {
+    width: 100%;
+    gap: 20px;
+    padding-bottom: 0;
+  }
+
+  .rightContainerHeading h3 {
+    font-size: 56px;
+    font-weight: 600;
+  }
+
+  .rightContainerHeading p {
+    font-size: var(--fs-16);
+    line-height: 26px;
+  }
+
+  .qrContainer {
+    justify-content: flex-end;
+    gap: 170px;
+    padding: 22px 36px 18px 36px;
+  }
+
+  .qrContainer img {
+    max-width: 90px;
+    max-height: 90px;
+  }
+
+  .storeButtons {
+    gap: 16px;
+    padding-top: 22px;
+  }
+
+  .googlePlayStore,
+  .applePlayStore {
+    padding: 16px 22px 16px 22px;
+    border-radius: 20px;
+    gap: 12px;
+  }
+
+  .storeButtonOne,
+  .storeButtonTwo {
+    gap: 18px;
+  }
+
+  .storeButtonOne img,
+  .storeButtonTwo img {
+    width: 34px !important;
+    height: 38px !important;
+  }
+
+  .storeButtonOne p,
+  .storeButtonTwo p {
+    margin: 0;
+  }
+}

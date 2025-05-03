@@ -1,0 +1,96 @@
+.mobileWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  padding: 100px 40px 100px 40px;
+  gap: 42px;
+  /* gap: 20px; */
+  justify-content: space-between;
+  background-color: #000; /* Matching dark background */
+}
+.maskWrapper {
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+}
+
+.mobileHeading h2 {
+  color: #ffffff;
+  font-size: 36px;
+  text-align: center;
+  font-family: 'Anek Latin', sans-serif;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.firstImageBlock {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 40px; */
+}
+
+.emojiImage {
+  position: absolute;
+  bottom: 100px;
+  right: 35px;
+}
+
+.stepCard {
+  /* margin-top: 50px; */
+  position: relative;
+  /* background: linear-gradient(to bottom, #5b5b5b 0%, #383838 50%, #543d36 100%); */
+  background-image: url('../../Assets/MagicStepsMobile/backBG.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease;
+  border-radius: 20px;
+  padding: 26px 45px 24px 28px;
+  text-align: left;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  max-width: 321px;
+  max-height: 187px;
+}
+
+.stepInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.stepNumber {
+  color: #fafafa;
+  font-size: 14px;
+  margin-bottom: 4px;
+  font-family: 'Anek Latin', sans-serif;
+}
+
+.stepTitle {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+  font-family: 'Anek Latin', sans-serif;
+}
+
+.stepDescription {
+  color: #aaa;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 29px;
+  font-family: 'Anek Latin', sans-serif;
+  line-height: 20px;
+}
+
+.imageSection {
+  position: absolute;
+  right: -50px;
+  bottom: 120px;
+}
+
+@media (min-width: 900px) {
+  .mobileWrapper {
+    display: none;
+  }
+}

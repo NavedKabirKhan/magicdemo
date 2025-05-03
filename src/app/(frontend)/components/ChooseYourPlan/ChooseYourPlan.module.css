@@ -1,0 +1,824 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url('/assets/backgroundImages/chooseyourplan.png'); */
+  background-size: cover;
+  /* background-color: #000000; */
+  background-position: center;
+  /* padding-top: 220px;
+  padding-left: 219px;
+  padding-right: 219px;
+  padding-bottom: 220px; */
+  padding-top: clamp(73px, calc(73px + 147 * ((100vw - 390px) / 1050)), 220px);
+padding-right: clamp(40px, calc(40px + 179 * ((100vw - 390px) / 1050)), 219px);
+padding-bottom: clamp(50px, calc(50px + 170 * ((100vw - 390px) / 1050)), 220px);
+padding-left: clamp(40px, calc(40px + 179 * ((100vw - 390px) / 1050)), 219px);
+
+}
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+.totalConatiner {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #ffffff;
+  border-radius: 40px;
+  /* padding-top: 67px;
+  padding-bottom: 79px;
+  padding-left: 100px;
+  padding-right: 127px; */
+  padding-top: clamp(28px, calc(28px + 39 * ((100vw - 390px) / 1050)), 67px);
+padding-bottom: clamp(28px, calc(28px + 51 * ((100vw - 390px) / 1050)), 79px);
+padding-left: clamp(28px, calc(28px + 72 * ((100vw - 390px) / 1050)), 100px);
+padding-right: clamp(27px, calc(27px + 100 * ((100vw - 390px) / 1050)), 127px);
+
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    rgba(85, 73, 70, 0.7) 0%,
+    rgba(36, 27, 25, 0.7) 18.73%,
+    rgba(13, 5, 3, 0.7) 39.4%,
+    rgba(33, 12, 7, 0.7) 62.58%,
+    rgba(70, 28, 12, 0.7) 83.1%,
+    rgba(170, 55, 14, 0.7) 102.57%
+  );
+
+  backdrop-filter: blur(150px);
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  gap: 16px;
+}
+.heading h3 {
+  font-size: var(--fs-64);
+  font-weight: 500;
+  color: #ffffff;
+  font-family: "Anek Latin", sans-serif;
+}
+.heading p {
+  font-size: var(--fs-24);
+  font-weight: 400;
+  font-family: "Anek Latin", sans-serif;
+  color: #dbdbdb;
+}
+.DinnerCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* gap: 27.59px; */
+  gap: clamp(10px, calc(10px + 17.59 * ((100vw - 390px) / 1050)), 27.59px);
+  padding-top: 63px;
+  padding-bottom: 86px;
+  width: 100%;
+  height: 100%;
+}
+.CardOneContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* gap: 32px; */
+  gap: clamp(12px, calc(12px + 20 * ((100vw - 390px) / 1050)), 32px);
+}
+.CardOneText h3 {
+  color: #f2ac93;
+  font-size: var(--fs-32);
+  font-weight: 500;
+  font-family: "Anek Latin", sans-serif;
+}
+.CardOne {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding-top: 46px;
+  padding-left: 31px;
+  padding-bottom: 48px;
+  width: 293px;
+  height: 337px;
+}
+.CardOnePrice {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 9.2px;
+}
+.CardOnePrice h4 {
+  font-size: var(--fs-48);
+  font-weight: 700;
+  color: #ff6e3b;
+  font-family: "Anek Latin", sans-serif;
+}
+.CardOnePrice p {
+  font-family: "Anek Latin", sans-serif;
+  font-size: var(--fs-18);
+  font-weight: 400;
+  color: #ff6e3b;
+}
+
+.CardOnePlanValidity p {
+  font-size: var(--fs-14);
+  font-weight: 400;
+  color: #ff6e3b;
+  font-family: "Anek Latin", sans-serif;
+}
+.CardOneBottomText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 57%;
+  /* padding-top: 122px; */
+  padding-top: clamp(47px, calc(47px + 75 * ((100vw - 390px) / 1050)), 122px);
+
+}
+.CardOneBottomText p {
+  font-family: "Manrope", sans-serif;
+  width: 95%;
+  font-size: var(--fs-14);
+  font-weight: 500;
+  color: #ff6e3b;
+}
+.nonRefundContainerMain {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nonRefundContainer {
+  position: absolute;
+  background-color: #ff6e3b;
+  padding: 6px 16px 6px 16px;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Anek Latin", sans-serif;
+  border-radius: 5px;
+  top: 50px;
+  right: 70px;
+}
+.line {
+  display: flex;
+  width: 2px;
+  height: 500px;
+  background: linear-gradient(
+    to bottom,
+    #ff6e3b00 0%,
+    #ff6e3b 50%,
+    #ff6e3b00 100%
+  );
+
+  flex-shrink: 0;
+}
+.CardTwoContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* gap: 32px; */
+  gap: clamp(12px, calc(12px + 20 * ((100vw - 390px) / 1050)), 32px);
+}
+.AllThreeCards{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: clamp(12px, calc(12px + 20 * ((100vw - 390px) / 1050)), 32px);
+}
+.CardTwoText h3 {
+  color: #f2ac93;
+  font-size: var(--fs-32);
+  font-weight: 500;
+  font-family: "Anek Latin", sans-serif;
+}
+
+.CardTwo {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  background-color: #ff6e3b;
+  border-radius: 20px;
+  padding-top: 46px;
+  padding-left: 31px;
+  padding-bottom: 48px;
+  width: 293px;
+  height: 337px;
+}
+.CardTwoPrice {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 9.2px;
+}
+.CardTwoPrice h4 {
+  font-size: var(--fs-48);
+  font-weight: 700;
+  color: #ffffff;
+  font-family: "Anek Latin", sans-serif;
+}
+.CardTwoPrice p {
+  font-family: "Anek Latin", sans-serif;
+  font-size: var(--fs-18);
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.CardTwoPlanValidity p {
+  font-size: var(--fs-14);
+  font-weight: 400;
+  color: #ffffff;
+  font-family: "Anek Latin", sans-serif;
+}
+.CardTwoBottomText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  /* padding-top: 122px; */
+  padding-top: clamp(47px, calc(47px + 75 * ((100vw - 390px) / 1050)), 122px);
+
+}
+.CardTwoBottomText p {
+  font-family: "Manrope", sans-serif;
+  font-size: var(--fs-14);
+  font-weight: 500;
+  color: #ffffff;
+}
+.lastCards {
+  display: flex;
+  flex-direction: row;
+  gap: 27.59px;
+  margin-bottom: -70px;
+}
+.CardThree {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  background-color: #ff6e3b;
+  border-radius: 20px;
+
+  position: relative;
+  width: 293px;
+  height: 337px;
+}
+.CardThreeMain {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 46px;
+  padding-left: 31px;
+  padding-bottom: 48px;
+}
+.cardThreeContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.CardThreePrice {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 9.2px;
+}
+.CardThreePrice h4 {
+  font-size: var(--fs-48);
+  font-weight: 700;
+  color: #ffffff;
+  font-family: "Anek Latin", sans-serif;
+}
+.CardThreePrice p {
+  font-family: "Anek Latin", sans-serif;
+  font-size: var(--fs-18);
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.CardThreePlanValidity p {
+  font-size: var(--fs-14);
+  font-weight: 400;
+  color: #ffffff;
+  font-family: "Anek Latin", sans-serif;
+}
+.CardThreeBottomText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 62%;
+  /* padding-top: 122px; */
+  padding-top: clamp(47px, calc(47px + 75 * ((100vw - 390px) / 1050)), 122px);
+
+}
+.CardThreeBottomText p {
+  font-family: "Manrope", sans-serif;
+  font-size: var(--fs-14);
+  font-weight: 500;
+  color: #ffffff;
+}
+.badge {
+  display: none;
+}
+.badge img {
+  position: absolute;
+  top: 0;
+  right: 25px;
+}
+/* .badge img{
+    width: 100%;
+    height: 100%;
+    max-width: 41px;
+    max-height: 59px;
+    } */
+.popularContainerMain {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popularContainer {
+  position: absolute;
+  background-color: #ffffff;
+  padding: 6px 25px 6px 25px;
+  color: #ff6e3b;
+  font-size: 18px;
+  font-family: "Anek Latin", sans-serif;
+  border-radius: 5px;
+  /* top: 300px; */
+  /* right: 85px; */
+}
+
+.CardFour {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  background-color: #ff6e3b;
+  border-radius: 20px;
+  padding-top: 46px;
+  padding-left: 31px;
+  padding-bottom: 48px;
+  width: 293px;
+  height: 337px;
+}
+.CardFourPrice {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 9.2px;
+}
+.CardFourPrice h4 {
+  font-size: var(--fs-48);
+  font-weight: 700;
+  color: #ffffff;
+  font-family: "Anek Latin", sans-serif;
+}
+.CardFourPrice p {
+  font-family: "Anek Latin", sans-serif;
+  font-size: var(--fs-18);
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.CardFourPlanValidity p {
+  font-size: var(--fs-14);
+  font-weight: 400;
+  color: #ffffff;
+  font-family: "Anek Latin", sans-serif;
+}
+.CardFourBottomText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  /* padding-top: 122px; */
+  padding-top: clamp(47px, calc(47px + 75 * ((100vw - 390px) / 1050)), 122px);
+
+}
+.CardFourBottomText p {
+  font-family: "Manrope", sans-serif;
+  font-size: var(--fs-14);
+  font-weight: 500;
+  color: #ffffff;
+}
+.BookSeatSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.totalConatiner button {
+  background-color: #ffffff;
+  /* padding: 29px 109px 29px 109px; */
+  padding-top: clamp(13px, calc(13px + 16 * ((100vw - 390px) / 1050)), 29px);
+padding-right: clamp(24px, calc(24px + 85 * ((100vw - 390px) / 1050)), 109px);
+padding-bottom: clamp(13px, calc(13px + 16 * ((100vw - 390px) / 1050)), 29px);
+padding-left: clamp(24px, calc(24px + 85 * ((100vw - 390px) / 1050)), 109px);
+
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  font-size: var(--fs-32);
+  font-weight: 700;
+  font-family: "Anek Latin", sans-serif;
+  color: #272727;
+  cursor: pointer;
+}
+.totalConatiner button:hover {
+  background-color: #434343;
+  color: #ffffff !important;
+}
+.maskWrapper {
+  overflow: hidden;
+  display: inline-block;
+}
+.CardOneText,
+.CardTwoText {
+  overflow: hidden;
+  display: inline-block;
+}
+.heading h3,
+.heading p {
+  transform: translateY(100%);
+  opacity: 0;
+}
+@media (min-width: 320px) and (max-width: 640px) {
+  .main {
+    /* padding: 120px 40px 0 40px; */
+    background-position: center;
+  }
+
+  .totalConatiner {
+    border-radius: 20px;
+  }
+
+  .heading h3 {
+    text-align: center;
+  }
+
+  .heading p {
+    text-align: center;
+  }
+  .AllThreeCards{
+    flex-direction: column;
+  }
+
+  .DinnerCards {
+    flex-direction: column;
+    /* gap: 16px; */
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .CardOne,
+  .CardTwo,
+  .CardThree,
+  .CardFour {
+    padding: 29px 20px;
+    width: 100%;
+    height: 100%;
+    max-height: 185px;
+  }
+  .CardFour {
+    justify-content: flex-start;
+    /* padding-top: 16px; */
+    margin-top: 16px;
+  }
+  .CardThreeMain {
+    padding: 0;
+    position: relative;
+  }
+  .cardThreeContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .CardOneBottomText,
+  .CardTwoBottomText,
+  .CardThreeBottomText,
+  .CardFourBottomText {
+    /* padding-top: 50px; */
+    width: 100%;
+    text-align: left;
+    width: 164px;
+  }
+
+  .popularContainer {
+    padding: 4px 12px;
+    top: 7px;
+    /* right: 15px; */
+  }
+  .lastCards {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 0px;
+    gap: 16px;
+  }
+
+  .BookSeatSection {
+    padding: 20px;
+    text-align: center;
+  }
+  .totalConatiner button {
+    /* padding: 13px 24px; */
+    white-space: nowrap;
+    font-size: 14px;
+    border-radius: 12px;
+  }
+  .line {
+    margin-top: 16px;
+    width: 284px;
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      #ff6e3b00 0%,
+      #ff6e3b 50%,
+      #ff6e3b00 100%
+    );
+
+    flex-shrink: 0;
+  }
+  .nonRefundContainer {
+    position: absolute;
+    background-color: #ff6e3b;
+    padding: 2px 12px 2px 12px;
+    white-space: nowrap;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "Anek Latin", sans-serif;
+    border-radius: 5px;
+    top: 15px;
+    right: 10px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 900px) {
+
+  .maskWrapper p{
+    text-align: center;
+  }
+  .DinnerCards {
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .CardOneBottomText p {
+    width: 100%;
+  }
+  .CardOne {
+    height: auto;
+    width: 312px;
+   
+  }
+  .AllThreeCards{
+    flex-direction: column;
+  }
+  .CardTwo {
+    width: 312px;
+    height: auto;
+  }
+  .CardThree {
+    width: 100%;
+    height: auto;
+  
+  }
+  .CardFour {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+  }
+
+  .CardOneBottomText {
+    width: 75%;
+    
+  }
+  .CardTwoBottomText {
+    width: 75%;
+    
+  }
+  .CardThreeBottomText {
+    width: 75%;
+    
+  }
+  .CardFourBottomText {
+    width: 75%;
+    
+  }
+
+  .heading h3 {
+    font-size: 48px;
+  }
+
+  .heading p {
+    font-size: 20px;
+  }
+  .line {
+    margin-top: 16px;
+    width: 350px;
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      #ff6e3b00 0%,
+      #ff6e3b 50%,
+      #ff6e3b00 100%
+    );
+
+    flex-shrink: 0;
+  }
+  .lastCards {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 0px;
+    gap: 16px;
+  }
+  .nonRefundContainer {
+    position: absolute;
+    background-color: #ff6e3b;
+    padding: 2px 12px 2px 12px;
+    white-space: nowrap;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "Anek Latin", sans-serif;
+    border-radius: 5px;
+    top: 35px;
+    right: 90px;
+  }
+  .totalConatiner button {
+    padding: 20px 60px;
+    border-radius: 12px;
+  }
+}
+@media (min-width: 901px) and (max-width: 1200px) {
+  .maskWrapper p{
+    text-align: center;
+  }
+  .DinnerCards {
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .CardOneBottomText p {
+    width: 100%;
+  }
+  .CardOne {
+    height: auto;
+    width: 312px;
+   
+  }
+  .AllThreeCards{
+    flex-direction: column;
+  }
+  .CardTwo {
+    width: 312px;
+    height: auto;
+  }
+  .CardThree {
+    width: 100%;
+    height: auto;
+  
+  }
+  .CardFour {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+  }
+
+  .CardOneBottomText {
+    width: 75%;
+    
+  }
+  .CardTwoBottomText {
+    width: 75%;
+    
+  }
+  .CardThreeBottomText {
+    width: 75%;
+    
+  }
+  .CardFourBottomText {
+    width: 75%;
+    
+  }
+
+  .heading h3 {
+    font-size: 48px;
+  }
+
+  .heading p {
+    font-size: 20px;
+  }
+  .line {
+    margin-top: 16px;
+    width: 350px;
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      #ff6e3b00 0%,
+      #ff6e3b 50%,
+      #ff6e3b00 100%
+    );
+
+    flex-shrink: 0;
+  }
+  .lastCards {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 0px;
+    gap: 16px;
+  }
+  .nonRefundContainer {
+    position: absolute;
+    background-color: #ff6e3b;
+    padding: 2px 12px 2px 12px;
+    white-space: nowrap;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "Anek Latin", sans-serif;
+    border-radius: 5px;
+    top: 35px;
+    right: 90px;
+  }
+  .totalConatiner button {
+    padding: 20px 60px;
+    border-radius: 12px;
+  }
+
+}
+@media (min-width: 1201px) and (max-width: 1800px) {
+  .main{
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .DinnerCards{
+    gap: 15px;
+  }
+  .AllThreeCards{
+    gap: 15px;
+  }
+  .totalConatiner{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  /* .DinnerCards{
+    justify-content: left;
+    width: 100%;
+  } */
+  .CardOne{
+    /* width: 100%; */
+    max-width: 251px !important;
+    max-height: 337px !important;
+    /* height: auto; */
+  }
+  .CardTwo{
+    /* width: 100%; */
+    max-width: 251px !important;
+    max-height: 337px !important;
+    /* height: auto; */
+  }
+  .CardThree{
+    /* width: 100%; */
+    max-width: 251px !important;
+    max-height: 337px !important;
+    /* height: auto; */
+  }
+
+  .CardFour{
+    /* width: 100%; */
+    max-width: 251px !important;
+    max-height: 337px !important;
+    /* height: auto; */
+  }
+
+
+  .nonRefundContainer {
+    white-space: nowrap;
+    right: 50px;
+    /* top: 40px; */
+  }
+  
+}

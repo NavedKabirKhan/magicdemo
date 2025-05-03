@@ -1,0 +1,48 @@
+.contactUs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-left: clamp(13.625em, 25vw, 31.25em);
+  padding-right: clamp(13.625em, 25vw, 31.25em);
+  
+  padding-top: clamp(6.6875em, 8vw, 12.5em);
+  padding-bottom: clamp(5.3125em, 6vw, 6.25em);
+  gap: 50px;
+  color: white;
+}
+.contactUs h2 {
+  color: #ffffff;
+  font-size: var(--fs-48);
+  font-weight: 700;
+  font-family: 'Anek Latin', sans-serif;
+}
+.contactDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  gap: 20px;
+  font-size: var(--fs-18);
+}
+
+.contactDetails ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contactDetails li {
+  list-style: none;
+}
+.contactDetails span {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 960px) {
+  .contactUs {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}

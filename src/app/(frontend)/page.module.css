@@ -1,0 +1,15 @@
+.page{
+  background-image: url("./Assets/background.png");
+  background-position: center;
+  background-size: auto;
+}
+.top, .bottom{
+  width: 100%;
+  height: 100vh;
+}
+.top{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}

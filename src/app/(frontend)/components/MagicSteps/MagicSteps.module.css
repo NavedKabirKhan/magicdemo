@@ -1,0 +1,440 @@
+.gallery {
+  display: flex;
+  width: 100%;
+  position: relative;
+  /* padding-top: 165px; */
+  /* padding-bottom: 230px; */
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.desktopContent {
+  padding: 0 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 100px
+}
+.desktopContent .heading h2 {
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+  width: 70%;
+}
+.desktopContentSection {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 150px;
+width: 100%;
+max-width: 78%;
+  padding: 82.46px 0 85.45px 44.72px;
+  /* border-bottom: 1px solid #ccc; */
+  border-radius: 35px;
+  /* background: linear-gradient(to bottom, #5b5b5b 0%, #383838 50%, #543d36 100%); */
+  background-image: url("../../Assets/MagicSteps/cardBG1.png");
+  transition: transform 0.3s ease;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.CardOneTopTexts p {
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.CardOneTopTexts h4 {
+  font-weight: 700;
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.CardOneBottomTexts p {
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 23px;
+  line-height: 25px;
+}
+.CardOneLeft{
+  width: 60%;
+}
+.CardOneRight{
+  position: relative;
+}
+.CardOneRight img{
+  position: absolute;
+  top: -80px;
+  left: 15px;
+}
+.ImageContainer {
+  /* padding: 60px 0; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.desktopPhotos {
+  position: absolute;
+  margin-top: 150px;
+  width: 100%;
+}
+
+.imageAndHeadingContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.desktopPhoto {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.mobileContent {
+  display: none;
+}
+
+.mobilePhoto {
+  width: 150px;
+  height: auto;
+}
+
+.mobileHeading {
+  font-size: 28px;
+  margin-top: 40px;
+}
+
+.iphoneScreen {
+  position: absolute;
+  /* top: -285px; */
+  top: 0;
+  top: 80px;
+}
+
+.EmojiContainer{
+  position: relative;
+  display: flex;
+}
+.emoji {
+  position: absolute;
+}
+
+/* Position each emoji uniquely */
+.emoji1 {
+  top: 560px;
+  right: 240px;
+}
+
+.emoji2 {
+  top: 645px;
+  left: 80px;
+  transform: rotate(20deg);
+}
+
+.emoji3 {
+  top: 320px;
+  right: 130px;
+}
+
+.emoji4 {
+  top: 430px;
+  right: 190px;
+}
+
+.emoji5 {
+  top: 450px;
+  left: 100px;
+}
+
+@media(max-width: 900px){
+  .gallery{
+    display: none;
+  }
+  .right{
+   display: none;
+  }
+  .left{
+    display: none;
+  }
+ }
+ @media (min-width: 901px) and (max-width: 1200px) {
+  .gallery {
+    display: flex;
+    width: 100%;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 180px;
+  }
+
+  .left {
+    width: 50%;
+  }
+
+  .right {
+    width: 50%;
+    height: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .desktopContent {
+    padding: 0 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .desktopContent .heading h2 {
+    text-align: center;
+    width: 90%;
+  }
+
+  .desktopContentSection {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    padding: 40px 0 50px 44.72px;
+    border-radius: 35px;
+    background: linear-gradient(to bottom, #5b5b5b 0%, #383838 50%, #543d36 100%);
+    transition: transform 0.3s ease;
+  }
+
+  .CardOneBottomTexts p {
+    margin-top: 20px;
+  }
+
+  .CardOneLeft {
+    width: 60%;
+  }
+
+  .CardOneRight {
+    position: relative;
+  }
+
+  .CardOneRight img {
+    position: absolute;
+    top: -100px;
+    left: -30px;
+    width: 250px;
+    height: auto;
+  }
+
+  .ImageContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .iphoneScreen {
+    position: absolute;
+    top: 0;
+    top: 80px;
+    width: 450px;
+    height: auto;
+  }
+
+  .EmojiContainer {
+    position: relative;
+    display: flex;
+  }
+
+  .emoji {
+    position: absolute;
+  }
+
+
+  .emoji1 {
+    top: 400px;
+    right: 140px;
+    width: 80px; 
+    height: 80px;
+  }
+
+  .emoji2 {
+    top: 470px;
+    left: 45px;
+    transform: rotate(20deg);
+    width: 80px; 
+    height: 80px;
+  }
+
+  .emoji3 {
+    top: 240px;
+    right: 70px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .emoji4 {
+    top: 340px;
+    right: 150px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .emoji5 {
+    top: 330px;
+    left: 70px;
+    width: 80px;
+    height: 80px;
+  }
+ }
+
+ @media (min-width: 1201px) and (max-width: 1500px) {
+  .gallery {
+    display: flex;
+    width: 100%;
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 210px;
+  }
+
+  .left {
+    width: 50%;
+  }
+
+  .right {
+    width: 50%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .desktopContent {
+    padding: 0 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+  }
+
+  .desktopContent .heading h2 {
+    text-align: center;
+    width: 80%;
+  }
+
+  .desktopContentSection {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 90%;
+    padding: 60px 0 70px 44.72px;
+    border-radius: 35px;
+    background: linear-gradient(to bottom, #5b5b5b 0%, #383838 50%, #543d36 100%);
+    transition: transform 0.3s ease;
+  }
+
+  .CardOneBottomTexts p {
+    margin-top: 25px;
+  }
+
+  .CardOneLeft {
+    width: 60%;
+  }
+
+  .CardOneRight {
+    position: relative;
+  }
+
+  .CardOneRight img {
+    position: absolute;
+    top: -120px;
+    left: -20px;
+    width: 280px;
+    height: auto;
+  }
+
+  .ImageContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .iphoneScreen {
+    position: absolute;
+    top: 0;
+    top: 100px;
+    width: 500px;
+    height: auto;
+  }
+
+  .EmojiContainer {
+    position: relative;
+    display: flex;
+  }
+
+  .emoji {
+    position: absolute;
+  }
+
+  .emoji1 {
+    top: 480px;
+    right: 160px;
+    width: 90px;
+    height: 90px;
+  }
+
+  .emoji2 {
+    top: 550px;
+    left: 55px;
+    transform: rotate(20deg);
+    width: 90px;
+    height: 90px;
+  }
+
+  .emoji3 {
+    top: 310px;
+    right: 90px;
+    width: 90px;
+    height: 90px;
+  }
+
+  .emoji4 {
+    top: 410px;
+    right: 170px;
+    width: 90px;
+    height: 90px;
+  }
+
+  .emoji5 {
+    top: 400px;
+    left: 90px;
+    width: 90px;
+    height: 90px;
+  }
+}
